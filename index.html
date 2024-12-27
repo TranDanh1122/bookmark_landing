@@ -31,29 +31,49 @@
 </head>
 
 <body class="overflow-x-hidden">
-  <header class="container max-w-1110 mx-auto w-full">
-    <nav class="flex flex-row flex-nowrap items-center justify-between pt-12">
-      <img src="./images/logo-bookmark.svg" alt="logo" class="w-36 h-6 object-cover cursor-pointer">
-      <ul class="flex flex-row flex-nowrap gap-10 text-[0.75rem] leading-4 tracking-[1.5px] text-black uppercase">
+  <header class="container max-w-1110 mx-auto w-full mb:w-[90%] mb:max-w-none">
+    <nav class="flex flex-row flex-nowrap items-center justify-between pt-12 w-full">
+      <img src="./images/logo-bookmark.svg" alt="logo" class="logo w-36 h-6 object-cover cursor-pointer relative z-20">
+      <img open src="./images/white-logo.svg" alt="logo"
+        class=" hidden w-36 h-6 object-cover cursor-pointer relative z-20">
+
+      <ul
+        class="flex flex-row flex-nowrap gap-10 text-[0.75rem] leading-4 tracking-[1.5px] menu text-black uppercase  mb:hidden mb:relative mb:z-20">
         <li><a href="javascrip:void(0)" class="cursor-pointer hover:text-red">Features</a></li>
         <li><a href="javascrip:void(0)" class="cursor-pointer hover:text-red">Pricing</a></li>
         <li><a href="javascrip:void(0)" class="cursor-pointer hover:text-red">Contact</a></li>
         <li><a href="javascrip:void(0)"
-            class="text-white py-3 px-8 bg-red rounded-md hover:bg-white hover:text-red hover:border-red hover:border-[1px] ">Login</a>
+            class="text-white py-3 px-8 bg-red rounded-md hover:bg-white hover:text-red hover:border-red hover:border-[1px] login ">Login</a>
         </li>
       </ul>
+      <ul
+        class="hidden socials flex-row flex-nowrap gap-10 text-[0.75rem] leading-4 tracking-[1.5px] text-white uppercase ml-auto mb:justify-center mb:w-full">
+        <li class="ml-auto  mb:ml-0""><a href=" javascrip:void(0)" class="cursor-pointer" title="facebook"><i
+            class="block w-6 h-5 bg-white hover:bg-red"
+            style="mask: url(images/icon-facebook.svg) center / contain no-repeat; -webkit-mask: url(images/icon-facebook.svg) center / contain no-repeat;"></i></a>
+        </li>
+        <li><a href="javascrip:void(0)" title="twitter" class="cursor-pointer"><i
+              class="block w-6 h-5 bg-white hover:bg-red"
+              style="mask: url(images/icon-twitter.svg) center / contain no-repeat; -webkit-mask: url(images/icon-twitter.svg) center / contain no-repeat;"></i></a>
+        </li>
+      </ul>
+      <i class="mobile_menu hidden w-[1.125rem] h-4 bg-black mb:block relative z-20"
+        style="mask:url(images/icon-hamburger.svg) center / contain no-repeat;-webkit-mask:url(images/icon-hamburger.svg) center / contain no-repeat; "></i>
     </nav>
   </header>
   <main>
     <section
-      class="hero flex flex-nowrap flex-row gap-16 items-center container max-w-1110 mx-auto w-full mt-[6.75rem]">
-      <div>
-        <h1 class="text-[3rem] leading-[3rem] tracking-[-0.15px] text-black"> A Simple Bookmark Manager</h1>
-        <p class="text-[1.125rem] leading-[1.5rem] text-black text-opacity-50 pt-6 pb-8"> A clean and simple interface
+      class="hero flex flex-nowrap flex-row gap-16 items-center container max-w-1110 mx-auto w-full mt-[6.75rem] mb:flex-wrap mb:w-[90%] mb:max-w-none">
+      <div class="mb:w-full mb:order-1">
+        <h1
+          class="text-[3rem] leading-[3rem] tracking-[-0.15px] text-black mb:text-center mb:text-[2rem] mb:leading-[2.5rem] mb:tracking-tighter">
+          A Simple Bookmark Manager</h1>
+        <p class="text-[1.125rem] leading-[1.5rem] text-black text-opacity-50 pt-6 pb-8 mb:text-center"> A clean and
+          simple interface
           to organize
           your favourite websites. Open a new
           browser tab and see your sites load instantly. Try it for free.</p>
-        <div class="action flex flex-nowrap flex-row gap-4 items-center text-[0.875rem]">
+        <div class="action flex flex-nowrap flex-row gap-4 items-center text-[0.875rem] mb:justify-center">
           <a class="py-3 px-6 bg-blue text-white  cursor-pointer rounded-md shadow-md shadow-blue  hover:border-blue hover:border-[1px] hover:bg-white hover:text-blue"
             href="javascrip:void(0)" title="get it on Chrome"> Get it
             on Chrome</a>
@@ -63,87 +83,107 @@
             Get it on Firefox</a>
         </div>
       </div>
-      <img src="./images/illustration-hero.svg" alt="hero" class="w-full h-full object-cover">
-      <div class="absolute bottom-[20%] right-[-70%] w-full h-[22rem] bg-blue rounded-[20rem] -z-10"></div>
+      <img src="./images/illustration-hero.svg" alt="hero" class="w-full h-full object-cover mb:w-full">
+      <div class="absolute bottom-[20%] right-[-70%] w-full h-[22rem] mb:h-[16rem] bg-blue rounded-[20rem] -z-10"></div>
     </section>
-    <section class="feature container max-w-1110 mx-auto w-full">
-      <h2 class="text-[2rem] leading-[3rem] tracking-[-0.1px] text-black text-center">
-        Features</h2>
-      <p class="text-[1.125rem] text-black leading-[1.5rem] text-opacity-50 text-center mt-4 w-1/2 mx-auto"> Our aim is
+    <section class="feature container max-w-1110 mx-auto w-full mt-36 mb:w-[90%] mb:max-w-none"">
+      <h2 class=" text-[2rem] leading-[3rem] tracking-[-0.1px] text-black text-center mb:text-[1.5rem]">
+      Features</h2>
+      <p class="text-[1.125rem] text-black leading-[1.5rem] text-opacity-50 text-center mt-4 w-1/2 mx-auto mb:w-full">
+        Our aim is
         to make it quick
         and easy for
         you to access your favourite websites.
         Your bookmarks sync between your devices so you can access them on the go.</p>
       <ul
-        class="flex flex-row w-fit mx-auto flex-nowrap pb-8 border-b-[1px] border-b-gray text-black leading-[0.53px] text-opacity-75 justify-center gap-12 mt-20">
-        <li><a tab="1" class="px-10 pb-6 tab cursor-pointer hover:text-red" active href="javascript:void(0)"
-            title="Simple Bookmarking"> Simple
+        class="flex flex-row w-full text-center mx-auto flex-nowrap pb-8 border-b-[1px] border-b-gray mb:border-0 text-black leading-[0.53px] text-opacity-75 justify-center gap-12 mt-20 mb:flex-wrap">
+        <li class="w-full h-full mb:border-b-[1px] mb:border-b-gray"><a tab="1"
+            class="mb:block px-10 pb-6 tab cursor-pointer hover:text-red mb:w-3/4 mb:mx-auto mb:text-center" active
+            href="javascript:void(0)" title="Simple Bookmarking"> Simple
             Bookmarking</a></li>
-        <li><a tab="2" class="px-10 pb-6 tab cursor-pointer hover:text-red" href="javascript:void(0)"
-            title="Speedy Searching"> Speedy Searching</a>
+        <li class="w-full mb:border-b-[1px] mb:border-b-gray"><a tab="2"
+            class=" mb:block px-10 pb-6 tab cursor-pointer hover:text-red mb:w-3/4 mb:mx-auto mb:text-center"
+            href="javascript:void(0)" title="Speedy Searching"> Speedy Searching</a>
         </li>
-        <li><a tab="3" class="px-10 pb-6 tab cursor-pointer hover:text-red" href="javascript:void(0)"
-            title="Easy Sharing"> Easy Sharing</a></li>
+        <li class="w-full mb:border-b-[1px] mb:border-b-gray"><a tab="3"
+            class=" mb:block px-10 pb-6 tab cursor-pointer hover:text-red mb:w-3/4 mb:mx-auto mb:text-center"
+            href="javascript:void(0)" title="Easy Sharing"> Easy Sharing</a></li>
       </ul>
       <div class="mt-[4.5rem]">
-        <div active tab_content="1" class=" hidden flex-nowrap flex-row items-center gap-32 relative">
+        <div active tab_content="1"
+          class=" hidden flex-nowrap flex-row items-center gap-32 relative mb:flex-wrap mb:gap-8">
           <img src="./images/illustration-features-tab-1.svg" alt="illustration-features-tab-1"
             class="w-full h-full object-cover">
           <div>
-            <h3 class="text-black text-[2rem] leading-[3rem] tracking-[-0.1px] font-medium">
+            <h3
+              class="text-black text-[2rem] leading-[3rem] tracking-[-0.1px] font-medium mb:text-center mb:text-[1.5rem]">
               Bookmark in one click
             </h3>
-            <p class="text-black text-opacity-50 text-[1.125rem] leading-[1.5rem]"> Organize your bookmarks however you
+            <p class="text-black text-opacity-50 text-[1.125rem] leading-[1.5rem]  mb:text-center"> Organize your
+              bookmarks however you
               like. Our simple drag-and-drop interface
               gives you complete control over how you manage your favourite sites.</p>
             <a href="javascript:void(0)"
-              class="text-[0.875rem] text-white py-3 px-8 bg-blue rounded-md mt-8 inline-block hover:border-blue hover:border-[1px] hover:bg-white hover:text-blue">More
+              class="mb:block mb:w-fit mb:mx-auto text-[0.875rem] text-white py-3 px-8 bg-blue rounded-md mt-8 inline-block hover:border-blue hover:border-[1px] hover:bg-white hover:text-blue">More
               Info</a>
           </div>
-          <div class="absolute bottom-[-20%] left-[-70%] w-full h-[22rem] bg-blue rounded-[20rem] -z-10"></div>
+          <div
+            class="absolute bottom-[-20%] mb:bottom-[20%] mb:h-[16rem] left-[-70%] w-full h-[22rem]  bg-blue rounded-[20rem] -z-10">
+          </div>
         </div>
-        <div tab_content="2" class=" hidden flex-nowrap flex-row items-center gap-32 relative">
+        <div tab_content="2" class=" hidden flex-nowrap flex-row items-center gap-32 relative mb:flex-wrap mb:gap-8">
           <img src="./images/illustration-features-tab-2.svg" alt="illustration-features-tab-2"
             class="w-full h-full object-cover">
           <div>
-            <h3 class="text-black text-[2rem] leading-[3rem] tracking-[-0.1px] font-medium">
+            <h3
+              class="text-black text-[2rem] leading-[3rem] tracking-[-0.1px] font-medium mb:text-center mb:text-[1.5rem]">
               Intelligent search
             </h3>
-            <p class="text-black text-opacity-50 text-[1.125rem] leading-[1.5rem]"> Our powerful search feature will
+            <p class="text-black text-opacity-50 text-[1.125rem] leading-[1.5rem]  mb:text-center"> Our powerful search
+              feature will
               help you find saved sites in no time at all.
               No need to trawl through all of your bookmarks.</p>
             <a href="javascript:void(0)"
-              class="text-[0.875rem] text-white py-3 px-8 bg-blue rounded-md mt-8 inline-block hover:border-blue hover:border-[1px] hover:bg-white hover:text-blue">More
+              class="mb:block mb:w-fit mb:mx-auto text-[0.875rem] text-white py-3 px-8 bg-blue rounded-md mt-8 inline-block hover:border-blue hover:border-[1px] hover:bg-white hover:text-blue">More
               Info</a>
           </div>
-          <div class="absolute bottom-[-20%] left-[-70%] w-full h-[22rem] bg-blue rounded-[20rem] -z-10"></div>
+          <div
+            class="absolute bottom-[-20%] left-[-70%] w-full h-[22rem] bg-blue rounded-[20rem] -z-10 mb:bottom-[20%] mb:h-[16rem]">
+          </div>
         </div>
-        <div tab_content="3" class=" hidden flex-nowrap flex-row items-center gap-32 relative">
+        <div tab_content="3" class=" hidden flex-nowrap flex-row items-center gap-32 relative mb:flex-wrap mb:gap-8">
           <img src="./images/illustration-features-tab-3.svg" alt="illustration-features-tab-3"
             class="w-full h-full object-cover">
           <div>
-            <h3 class="text-black text-[2rem] leading-[3rem] tracking-[-0.1px] font-medium">
+            <h3
+              class="text-black text-[2rem] leading-[3rem] tracking-[-0.1px] font-medium mb:text-center mb:text-[1.5rem]">
               Download the extension
             </h3>
-            <p class="text-black text-opacity-50 text-[1.125rem] leading-[1.5rem]">We’ve got more browsers in the
+            <p class="text-black text-opacity-50 text-[1.125rem] leading-[1.5rem]  mb:text-center">We’ve got more
+              browsers in the
               pipeline. Please do let us know if you’ve
               got a favourite you’d like us to prioritize.</p>
             <a href="javascript:void(0)"
-              class="text-[0.875rem] text-white py-3 px-8 bg-blue rounded-md mt-8 inline-block hover:border-blue hover:border-[1px] hover:bg-white hover:text-blue">More
+              class="mb:block mb:w-fit mb:mx-auto text-[0.875rem] text-white py-3 px-8 bg-blue rounded-md mt-8 inline-block hover:border-blue hover:border-[1px] hover:bg-white hover:text-blue">More
               Info</a>
           </div>
-          <div class="absolute bottom-[-20%] left-[-70%] w-full h-[22rem] bg-blue rounded-[20rem] -z-10"></div>
+          <div
+            class="absolute bottom-[-20%] left-[-70%] w-full h-[22rem] bg-blue rounded-[20rem] -z-10 mb:bottom-[20%] mb:h-[16rem]">
+          </div>
         </div>
       </div>
     </section>
-    <section class="mt-[15rem]  container max-w-1110 mx-auto w-full">
-      <h2 class="text-black font-medium tracking-[-0.1px] text-[2rem] leading-[3rem] text-center">Download the extension
+    <section class="mt-[15rem]  container max-w-1110 mx-auto w-full mb:w-[90%] mb:max-w-none">
+      <h2 class="text-black font-medium tracking-[-0.1px] text-[2rem] leading-[3rem] text-center mb:text-[1.5rem] ">
+        Download the extension
       </h2>
-      <p class="text-black text-opacity-50 text-[1.125rem] leading-[1.5rem] mt-4 w-1/2 mx-auto mb-12 text-center">We’ve
+      <p
+        class="text-black text-opacity-50 text-[1.125rem] leading-[1.5rem] mt-4 w-1/2 mx-auto mb-12 text-center mb:w-full">
+        We’ve
         got more browsers in the pipeline.
         Please do let us know if you’ve got a favourite you’d like us to
         prioritize.</p>
-      <div class="flex flex-nowrap flex-row gap-8 justify-center">
+      <div class="flex flex-nowrap flex-row gap-8 justify-center mb:flex-wrap">
         <div class="p-6 pt-12 shadow-lg">
           <img src="./images/logo-chrome.svg" alt="logo-chrome" class="w-[6.25rem] h-[6.25rem]  mb-8 mx-auto">
           <h3 class="font-medium text-black text-[1.25rem] tracking-[0.25px] text-center"> Add to Chrome</h3>
@@ -178,15 +218,18 @@
         </div>
       </div>
     </section>
-    <section class=" container max-w-1110 mx-auto w-full mt-40">
-              <h2 class="text-center text-black text-[2rem] leading-[3rem] tracking-[-0.1px] font-medium"> Frequently
+    <section class=" container max-w-1110 mx-auto w-full mt-40 mb:w-[90%] mb:max-w-none">
+              <h2
+                class="text-center text-black text-[2rem] leading-[3rem] tracking-[-0.1px] font-medium mb:text-[1.5rem]">
+                Frequently
                 Asked Questions</h2>
-              <p class="text-black text-opacity-50 text-[1.125rem] leading-[1.5rem] mt-4 w-1/2 mx-auto text-center">
+              <p
+                class="text-black text-opacity-50 text-[1.125rem] leading-[1.5rem] mt-4 w-1/2 mx-auto text-center mb:w-full">
                 Here are some of our FAQs. If you have any other questions you’d like
                 answered please feel free to email us.</p>
               <div>
                 <div active
-                  class="w-1/2 mx-auto mt-14 border-t-[1px] border-gray border-solid border-b-[1px] faq_wrapper">
+                  class="w-1/2 mb:w-full mx-auto mt-14 border-t-[1px] border-gray border-solid border-b-[1px] faq_wrapper">
                   <h3
                     class="text-black text-[1.125rem] py-4 leading-[2rem] flex items-center justify-between hover:text-red faq cursor-pointer">
                     What is
@@ -197,7 +240,7 @@
                     adipiscing elit. Fusce tincidunt
                     justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
                 </div>
-                <div class="w-1/2 mx-auto  border-gray border-solid border-b-[1px] faq_wrapper">
+                <div class="w-1/2 mb:w-full mx-auto  border-gray border-solid border-b-[1px] faq_wrapper">
                   <h3
                     class="text-black text-[1.125rem]  py-4  leading-[2rem] flex items-center justify-between hover:text-red faq cursor-pointer">
                     How can I request a new browser? <i class="faq block w-4 h-2 bg-blue hover:bg-red"
@@ -210,7 +253,7 @@
                     ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
                     Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
                 </div>
-                <div class="w-1/2 mx-auto  border-gray border-solid border-b-[1px] faq_wrapper">
+                <div class="w-1/2 mb:w-full mx-auto  border-gray border-solid border-b-[1px] faq_wrapper">
                   <h3
                     class="text-black text-[1.125rem] py-4  leading-[2rem] flex items-center justify-between hover:text-red faq cursor-pointer">
                     Is there a mobile app? <i class="faq block w-4 h-2 bg-blue hover:bg-red"
@@ -221,7 +264,7 @@
                     urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed
                     sollicitudin ex et ultricies bibendum.</p>
                 </div>
-                <div class="w-1/2 mx-auto border-gray border-solid border-b-[1px] faq_wrapper">
+                <div class="w-1/2 mb:w-full mx-auto border-gray border-solid border-b-[1px] faq_wrapper">
                   <h3
                     class="text-black text-[1.125rem] py-4  leading-[2rem] flex items-center justify-between hover:text-red faq cursor-pointer">
                     What about other Chromium browsers?<i class="block w-4 h-2 bg-blue hover:bg-red faq"
@@ -236,34 +279,38 @@
               <a href="javascript:void(0)"
                 class="text-[0.875rem] text-white py-3 px-8 bg-blue rounded-md mt-14 block w-fit mx-auto  hover:border-blue hover:border-[1px] hover:bg-white hover:text-blue""> More Info</a>
     </section>
-    <section class=" bg-blue">
-                <div class="container max-w-1110 mx-auto w-full mt-40">
+    <section class=" bg-blue mt-40">
+                <div class="container max-w-1110 mx-auto w-full  mb:w-[90%] mb:max-w-none">
                   <span
-                    class="font-medium text-[0.8125rem] text-white leading-[2.5rem] text-center block uppercase tracking-wide pt-16">
+                    class="font-medium text-[0.8125rem] text-white leading-[2.5rem] text-center block uppercase tracking-[4.26px] pt-16">
                     35,000+
                     already joined</span>
-                  <h2 class="text-[2rem] text-white text leading-[2.5rem] tracking-[-0.1px] text-center mt-6 mb-8"> Stay
+                  <h2
+                    class="text-[2rem] text-white text leading-[2.5rem] tracking-[-0.1px] text-center mt-6 mb-8 mb:text-[1.5rem]">
+                    Stay
                     up-to-date with what we’re doing</h2>
-                  <form action="#" novalidate class="mx-auto flex flex-row justify-center gap-4 items-center pb-20">
+                  <form novalidate
+                    class="mx-auto flex flex-row justify-center gap-4 items-center pb-20 mb:flex-wrap mb:gap-y-8">
                     <div class="relative">
-                      <input error type="text" name="email" placeholder="Enter your email address"
+                      <input type="text" name="email" placeholder="Enter your email address"
                         class="bg-white text-black text-opacity-50 py-3 px-5 text-[0.875rem] leading-[1.5rem] tracking-[0.25px] rounded-md min-w-[18rem] relative z-[2]">
                       <span
                         class=" hidden error absolute bg-red text-white top-[90%] left-0 w-full py-2 px-3 z-[1] rounded-b-md rounded-bl-md">abc</span>
                     </div>
-                    <button
+                    <button type="submit"
                       class="text-white px-6 py-3 bg-red rounded-md  hover:border-red hover:border-[1px] hover:bg-white hover:text-red">Contact
                       Us</button>
                   </form>
                 </div>
     </section>
-
   </main>
 
   <footer class=" bg-black">
-    <nav class="container max-w-1110 mx-auto w-full flex flex-row flex-nowrap items-center justify-start py-12 gap-28">
-      <img src="./images/footer_logo.svg" alt="logo" class="w-36 h-6 object-cover cursor-pointer">
-      <ul class="flex flex-row flex-nowrap gap-10 text-[0.75rem] leading-4 tracking-[1.5px] text-white uppercase">
+    <nav
+      class="container max-w-1110 mx-auto w-full flex flex-row flex-nowrap items-center justify-start py-12 gap-28 mb:gap-8 mb:w-[90%] mb:max-w-none mb:flex-col">
+      <img src="./images/footer_logo.svg" alt="logo" class="w-36 h-6 object-cover cursor-pointer mx-auto">
+      <ul
+        class="flex flex-row flex-nowrap gap-10 text-[0.75rem] leading-4 tracking-[1.5px] text-white uppercase mb:flex-col mb:items-center">
         <li><a href="javascrip:void(0)" class="cursor-pointer hover:text-red" title="Features">Features</a></li>
         <li><a href="javascrip:void(0)" class="cursor-pointer hover:text-red" title="Pricing">Pricing</a></li>
         <li><a href="javascrip:void(0)" class="cursor-pointer hover:text-red" title="Contact">Contact</a></li>
@@ -274,12 +321,13 @@
 
       </ul>
       <ul
-        class="flex flex-row flex-nowrap gap-10 text-[0.75rem] leading-4 tracking-[1.5px] text-white uppercase ml-auto">
-        <li class="ml-auto"><a href="javascrip:void(0)" class="cursor-pointer" title="facebook"><i
-              class="block w-6 h-5 bg-white hover:bg-red"
-              style="mask: url(images/icon-facebook.svg) center / contain no-repeat; -webkit-mask: url(images/icon-facebook.svg) center / contain no-repeat;"></i></a>
+        class="flex flex-row flex-nowrap gap-10 text-[0.75rem] leading-4 tracking-[1.5px] text-white uppercase ml-auto mb:justify-center mb:w-full">
+        <li class="ml-auto  mb:ml-0""><a href=" javascrip:void(0)" class="cursor-pointer" title="facebook"><i
+            class="block w-6 h-5 bg-white hover:bg-red"
+            style="mask: url(images/icon-facebook.svg) center / contain no-repeat; -webkit-mask: url(images/icon-facebook.svg) center / contain no-repeat;"></i></a>
         </li>
-        <li><a href="javascrip:void(0)" title="twitter" class="cursor-pointer"><i class="block w-6 h-5 bg-white hover:bg-red"
+        <li><a href="javascrip:void(0)" title="twitter" class="cursor-pointer"><i
+              class="block w-6 h-5 bg-white hover:bg-red"
               style="mask: url(images/icon-twitter.svg) center / contain no-repeat; -webkit-mask: url(images/icon-twitter.svg) center / contain no-repeat;"></i></a>
         </li>
       </ul>
@@ -293,6 +341,7 @@
     </p>
   </footer>
 </body>
+<script src="./validate.js"></script>
 <script>
   let tabs = document.querySelectorAll('.tab')
   let tabContents = document.querySelectorAll("[tab_content]")
@@ -313,6 +362,12 @@
     document.querySelectorAll(".faq_wrapper").forEach(el => el.toggleAttribute('active', false))
     faqWrapper.toggleAttribute('active', true)
   }))
+  let body = document.querySelector('body')
+  let menuToggle = document.querySelector('.mobile_menu')
+  menuToggle.addEventListener('click', (e) => {
+    body.toggleAttribute('open')
+  })
+
 </script>
 
 </html>

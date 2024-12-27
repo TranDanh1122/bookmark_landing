@@ -33,4 +33,63 @@
         background-size: 50% 100%;
         background-position: right;
     }
+    body[open] header{
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        background-color: #242A45;
+        top: 0;
+        right: 0;
+    }
+    body[open] nav{
+        width: 90%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        row-gap: 2.5rem;
+    } 
+    body[open] img[open]{
+       display: block;
+    }
+    body[open] .logo{
+        display: none;
+     }
+     body[open] .mobile_menu {
+        mask:url(images/icon-close.svg) center / contain no-repeat !important;
+        -webkit-mask:url(images/icon-close.svg) center / contain no-repeat !important; 
+        background-color: white;
+     }
+     body[open] .menu {
+        order: 3;
+        display: block;
+        color: white;
+        font-size: 1.25rem;
+        line-height: 1.125rem;
+        letter-spacing: 2.31px;
+        width: 100%;
+     }
+     
+     body[open] .menu a {
+        text-align: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        display: block;
+     }
+     
+     body[open] .menu a:not(.login) {       
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray; 
+    }
+
+     body[open] .login {
+        margin-top: 1.5rem;
+        border: 2px solid white;
+        background-color: transparent;
+     }
+     body[open] .socials {
+        order: 4;
+        display: flex;
+        margin-top: 15rem;
+     }
 }

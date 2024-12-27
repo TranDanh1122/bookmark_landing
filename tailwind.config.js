@@ -8,8 +8,11 @@ module.exports = {
         "red": "#FA5959",
         "black": "#242A45",
         "gray": "#9194A2",
-        'almost_white' : "#F7F7F7"
+        'almost_white': "#F7F7F7"
       },
+      screens: {
+        "mb": { min: "0", max: "1024px" }
+      }
 
     },
   },

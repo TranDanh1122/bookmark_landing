@@ -558,6 +558,12 @@ video {
   width: 100%;
 }
 
+@media (min-width: 0) {
+  .container {
+    max-width: 0;
+  }
+}
+
 @media (min-width: 640px) {
   .container {
     max-width: 640px;
@@ -624,6 +630,10 @@ video {
   z-index: -10;
 }
 
+.z-20 {
+  z-index: 20;
+}
+
 .z-\[1\] {
   z-index: 1;
 }
@@ -659,6 +669,10 @@ video {
 
 .mt-20 {
   margin-top: 5rem;
+}
+
+.mt-36 {
+  margin-top: 9rem;
 }
 
 .mt-4 {
@@ -709,6 +723,10 @@ video {
   height: 0.5rem;
 }
 
+.h-4 {
+  height: 1rem;
+}
+
 .h-5 {
   height: 1.25rem;
 }
@@ -747,6 +765,10 @@ video {
 
 .w-6 {
   width: 1.5rem;
+}
+
+.w-\[1\.125rem\] {
+  width: 1.125rem;
 }
 
 .w-\[6\.25rem\] {
@@ -816,6 +838,10 @@ video {
   gap: 4rem;
 }
 
+.gap-28 {
+  gap: 7rem;
+}
+
 .gap-32 {
   gap: 8rem;
 }
@@ -826,10 +852,6 @@ video {
 
 .gap-8 {
   gap: 2rem;
-}
-
-.gap-28 {
-  gap: 7rem;
 }
 
 .overflow-x-hidden {
@@ -1070,8 +1092,8 @@ video {
   letter-spacing: 1.5px;
 }
 
-.tracking-wide {
-  letter-spacing: 0.025em;
+.tracking-\[4\.26px\] {
+  letter-spacing: 4.26px;
 }
 
 .text-black {
@@ -1140,11 +1162,70 @@ input[error] + .error {
   display: block;
 }
 
-.logo_footer {
+body[open] header{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: #242A45;
+  top: 0;
+  right: 0;
+}
+
+body[open] nav{
+  width: 90%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  row-gap: 2.5rem;
+}
+
+body[open] img[open]{
+  display: block;
+}
+
+body[open] .logo{
+  display: none;
+}
+
+body[open] .mobile_menu {
+  mask:url(images/icon-close.svg) center / contain no-repeat !important;
+  -webkit-mask:url(images/icon-close.svg) center / contain no-repeat !important;
   background-color: white;
-  background-repeat: no-repeat;
-  background-size: 50% 100%;
-  background-position: right;
+}
+
+body[open] .menu {
+  order: 3;
+  display: block;
+  color: white;
+  font-size: 1.25rem;
+  line-height: 1.125rem;
+  letter-spacing: 2.31px;
+  width: 100%;
+}
+
+body[open] .menu a {
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: block;
+}
+
+body[open] .menu a:not(.login) {
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
+body[open] .login {
+  margin-top: 1.5rem;
+  border: 2px solid white;
+  background-color: transparent;
+}
+
+body[open] .socials {
+  order: 4;
+  display: flex;
+  margin-top: 15rem;
 }
 
 .hover\:border-\[1px\]:hover {
@@ -1189,4 +1270,125 @@ input[error] + .error {
 .hover\:text-red:hover {
   --tw-text-opacity: 1;
   color: rgb(250 89 89 / var(--tw-text-opacity, 1));
+}
+
+@media (min-width: 0) and (max-width: 1024px) {
+  .mb\:relative {
+    position: relative;
+  }
+
+  .mb\:bottom-\[20\%\] {
+    bottom: 20%;
+  }
+
+  .mb\:z-20 {
+    z-index: 20;
+  }
+
+  .mb\:order-1 {
+    order: 1;
+  }
+
+  .mb\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .mb\:ml-0 {
+    margin-left: 0px;
+  }
+
+  .mb\:block {
+    display: block;
+  }
+
+  .mb\:hidden {
+    display: none;
+  }
+
+  .mb\:h-\[16rem\] {
+    height: 16rem;
+  }
+
+  .mb\:w-3\/4 {
+    width: 75%;
+  }
+
+  .mb\:w-\[90\%\] {
+    width: 90%;
+  }
+
+  .mb\:w-fit {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
+  .mb\:w-full {
+    width: 100%;
+  }
+
+  .mb\:max-w-none {
+    max-width: none;
+  }
+
+  .mb\:flex-col {
+    flex-direction: column;
+  }
+
+  .mb\:flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  .mb\:items-center {
+    align-items: center;
+  }
+
+  .mb\:justify-center {
+    justify-content: center;
+  }
+
+  .mb\:gap-8 {
+    gap: 2rem;
+  }
+
+  .mb\:gap-y-16 {
+    row-gap: 4rem;
+  }
+
+  .mb\:gap-y-8 {
+    row-gap: 2rem;
+  }
+
+  .mb\:border-0 {
+    border-width: 0px;
+  }
+
+  .mb\:border-b-\[1px\] {
+    border-bottom-width: 1px;
+  }
+
+  .mb\:border-b-gray {
+    --tw-border-opacity: 1;
+    border-bottom-color: rgb(145 148 162 / var(--tw-border-opacity, 1));
+  }
+
+  .mb\:text-center {
+    text-align: center;
+  }
+
+  .mb\:text-\[1\.5rem\] {
+    font-size: 1.5rem;
+  }
+
+  .mb\:text-\[2rem\] {
+    font-size: 2rem;
+  }
+
+  .mb\:leading-\[2\.5rem\] {
+    line-height: 2.5rem;
+  }
+
+  .mb\:tracking-tighter {
+    letter-spacing: -0.05em;
+  }
 }
