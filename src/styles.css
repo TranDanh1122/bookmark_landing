@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+    .tab[active] {
+        opacity: 1;
+        border-bottom: 2px solid #FA5959;
+        color: black;
+    }
+    *[tab_content][active] {
+        display: flex;
+    }
+    .faq_wrapper[active] p {
+        display: block;
+        opacity: 1;
+    }
+    .faq:hover i {
+        background-color: #FA5959;
+    }
+    .faq_wrapper[active] i {
+        transform: rotate(180deg);
+    }
+    input[error] {
+        border: 1px solid #FA5959
+
+    }
+    input[error] + .error {
+        display: block;
+    }
+    .logo_footer {
+        background-color: white;
+        background-repeat: no-repeat;
+        background-size: 50% 100%;
+        background-position: right;
+    }
+}
